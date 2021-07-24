@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embroidery</title>
+    <style>
+      body {
+        background: linear-gradient(
+          179.4deg,
+          rgb(253, 240, 233) 2.2%,
+          rgb(255, 194, 203) 96.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+        color: #113f67;
+      }
+      h2 {
+        color: #38598b;
+        text-align: center;
+      }
+      p {
+        line-height: 1.6;
+        text-align: initial;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        margin: 0px auto;
+        display: block;
+        color: #7c52ef;
+        font-size: 18px;
+        background: transparent;
+        padding: 20px;
+        border: 1px solid #7c52ef;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        background: #7c52ef;
+        color: #fff;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+      }
+      .center {
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .font {
+        color: #2f3c4f;
+      }
+      .small {
+        font-size: 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ِDo you like <em> EMBROIDERY?</em></h1>
+    <h2>It's a simple way to make beautiful stuff</h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/629/original/4ebi0ranv5h41.jpg?1622036594"
+      alt="Embroidery Picture"
+      width="300px"
+    />
+    <hr />
+    <div>
+      <p class="center">
+        <span class="font"> <em> Embroidery</em></span>
+        <span class="font">
+          is the craft of decorating fabric or other materials using a needle to
+          apply thread or yarn. <br />
+          It may also incorporate other materials such as pearls, beads, quills,
+          and sequins. <br />
+          In modern days, embroidery is usually seen on caps, hats, coats,
+          blankets, dress shirts, denim, dresses, stockings, and golf shirts.
+          <br />
+          Embroidery is available with a wide variety of thread or yarn colour.
+          <br />
+          It's an easy skill to learn.
+        </span>
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Embroidery"
+        target="_blank"
+        class="center"
+        >More information on Wikipedia</a
+      >
+      <br />
+      <h2>Do you want to do embroidery?</h2>
+      <button><em>Try our free workshops</em></button>
+      <p class="small">This page was built by <strong>Zahra Rabiei</strong>.</p>
+    </div>
+    <script>
+      function apply() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your e-mail address?");
+        let tool = prompt("Have you baught your tools?");
+        if (tool === "yes") {
+          alert(`Dear ${name} we will contact you soon.`);
+        } else {
+          alert("Please buy your tools ASAP before starting workshops!");
+        }
+      }
+      let tryButton = document.querySelector("button");
+      tryButton.addEventListener("click", apply);
+    </script>
+  </body>
+</html>
